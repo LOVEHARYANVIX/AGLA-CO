@@ -36,7 +36,6 @@ else:
 A = '\x1b[1;97m';R = '\x1b[38;5;196m';Y = '\033[1;33m';G = '\x1b[38;5;46m';B = '\x1b[38;5;8m';G1 = '\x1b[38;5;48m';G2 = '\x1b[38;5;47m';G3 = '\x1b[38;5;48m';G4 = '\x1b[38;5;49m';G5 = '\x1b[38;5;50m';X = '\33[1;34m';X1 = '\x1b[38;5;14m';X2 = '\x1b[38;5;123m';X3 = '\x1b[38;5;122m';X4 = '\x1b[38;5;86m';X5 = '\x1b[38;5;121m';S = '\x1b[1;96m';M = '\x1b[38;5;205m'
 #----------------------------[USER/AGENT]-----------------------------------#
 def ua():
-    ALI☠️random.randint
     aZ=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
     zA=random.choice(['a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
     rx=random.randrange(1, 999)
@@ -46,14 +45,40 @@ def ua():
     return xx
 #----------------------------[LOGO]-----------------------------------#
 
-
-logo = (f"""                        
-033[1;32m███╗   ██╗ █████╗ ██████╗ ███████╗███████╗███╗   ███╗    
-\033[1;36m████╗  ██║██╔══██╗██╔══██╗██╔════╝██╔════╝████╗ ████║    
-\033[1;33m██╔██╗ ██║███████║██║  ██║█████╗  █████╗  ██╔████╔██║    
-\033[1;30m██║╚██╗██║██╔══██║██║  ██║██╔══╝  ██╔══╝  ██║╚██╔╝██║    
-\033[1;36m██║ ╚████║██║  ██║██████╔╝███████╗███████╗██║ ╚═╝ ██║    
-\033[1;32m╚═╝  ╚═══╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝╚═╝     ╚═╝                                                                                                                                                                                                                                                 
+def superuser():
+    uuid = str(os.geteuid()) + str(os.getlogin()) 
+    id = "72A".join(uuid)
+    DARK=requests.get("https://github.com/Alexmani1/DARK/blob/main/USMANAP.txt").text
+    if id in DARK:
+        main()
+    else:
+        os.system("clear")
+        print(logo4)
+        print("\t \033[1;32m First Get Approvel\033[1;37m ")
+        time.sleep(1)
+        os.system("clear")
+        print(logo4)
+        linex()
+        print(" YOU NEED GET APPROVED FIRST\033[1;37m")
+        linex()
+        print("\033[1;31m NOTE : \033[1;37mTwo week Approval list for multiple country \n[•] Pakistan \033[1;36m(350pkr) \n\033[1;37m[•] India    \033[1;36m(150Inr) \n\033[1;37m[•] Bangladesh \033[1;36m(200Taka) \n\033[1;37m[•] Other Country \033[1;36m(3$) \n [•]\033[1;36m FOR PAK USERS EPESA AND JAZZ CASH OTHER USERS BAINANCE")
+        linex()
+        print(" 🔆Your Key is Not Approved 😴")
+        print(" 🔰COPY AND SEND ME IN WHATSAPP 🔰")
+        linex()
+        print (" \033[1;37m🇵🇰Your Key🇵🇰 : "'\033[1;36m'+'USMAN'+id);linex()
+        name = input(" PUT YOUR NAME : ")
+        input(" 😁PRESS ENTER TO SEND KEY⏩");linex()
+        time.sleep(3.5)
+        tks = ''+name+'USMAN'+id
+        os.system('am start https://wa.me/+923057637400?text=*HELLO*%2C%20*SIR*%20*I*%20*WANT*%20*TO*%20*YOUR*%20*ANONYMOUS*%20*PAID*%20*TOOL*%20*APPROVAL*%20/%20%20*My*%20*Key*%20*:*%20' + tks)
+        
+logo4 = (f"""                        
+\033[1;36m. ███    ██  █████  ██████  ███████ ███████ ███    ███      |
+\033[1;35m. ████   ██ ██   ██ ██   ██ ██      ██      ████  ████      |
+\033[1;34m. ██ ██  ██ ███████ ██   ██ █████   █████   ██ ████ ██      |  
+\033[1;33m. ██  ██ ██ ██   ██ ██   ██ ██      ██      ██  ██  ██      |
+\033[1;32m. ██   ████ ██   ██ ██████  ███████ ███████ ██      ██      |                                                                                                                                                                                                                                                                                                                         
 \x1b[1;92m═━═━═━═━═━━═━═━══━═━═━═━═━━═━═━══━═━━══━═━═━━══━═━━═━══━══━═━═━═
 \033[1;92m[\033[1;92m\033[1;34m✔\033[1;92m]DEVELOPER      \033[1;91m\033[1;34m: \033[1;92   NADEEM  ALI-☠️     [-VPN-MH PROXY-] 
 [\033[1;92m\033[1;34m✔\033[1;92m]FACEBOOK       \033[1;91m\033[1;34m: \033[1;92m PARDHAN KIING         [-THE BARND-] 
@@ -65,13 +90,13 @@ logo = (f"""
 def main():
     user=[]
     os.system("clear")
-    print(logo)
+    print(logo4)
     print(f'\x1b[38;5;8m\x1b[38;5;8m(\x1b[1;97m~\x1b[38;5;8m) \033[1;37mEXAMPLE   : \033[1;37m10000 | 20000 | 90000 [-CHOOSE LIMIT ID-] 🙏💔')
     lin()
     limit=input("\x1b[38;5;8m(\x1b[1;97m~\x1b[38;5;8m) \x1b[1;97mMATHOD   : ")
     lin()
     os.system('clear')
-    print(logo)
+    print(logo4)
     print("\x1b[38;5;8m(\x1b[1;97m1\x1b[38;5;8m) \x1b[1;97mSELECT MATHOD ~ (2010 - 2009")
     lin()
     ask=input("\x1b[38;5;8m(\x1b[1;97m~\x1b[38;5;8m) \x1b[1;97mCHOICE    : ")
@@ -88,7 +113,7 @@ def main():
             user.append(data)    
     with ThreadPool(max_workers=40) as MrDevilEx:
         os.system('clear')
-        print(logo)
+        print(logo4)
         print(f'\x1b[38;5;8m(\x1b[1;97m~\x1b[38;5;8m) \x1b[38;5;47mTOTAL ID : {limit} \x1b[38;5;8m(\x1b[1;97m~\x1b[38;5;8m) \x1b[38;5;47m  METHOD : \x1b[38;5;86m{ask} KI ACCOUNT SELECTE KIYA')
         print(f'\x1b[38;5;8m(\x1b[1;97m~\x1b[38;5;8m) \x1b[38;5;47mIF NO RESULT \x1b[38;5;8m[\x1b[38;5;47mON\x1b[1;97m/\x1b[38;5;47mOF\x1b[38;5;8m]  \x1b[38;5;47mAIRPLANE MODE |-BROEN NADEEM-|')
         lin()
@@ -133,42 +158,6 @@ def login(uid):
         loop+=1
     except:pass
 main()
-def Subscraption():
-	key1=open('/data/data/com.termux/files/usr/bin/.mrBALOCH -cov', 'r').read()
-	clear()
-	print(logo)
-	r1=requests.get("https://raw.githubusercontent.com/WASUx/F-1/main/APPROVAL.txt").text
-	if key1 in r1:
-		os.system('clear')
-		print(logo)
-		Main()
-	else:
-		os.system("clear")
-		print(logo)
-		print("\t \033[1;32m First Get Approvel\033[1;37m ")
-		time.sleep(1)
-		os.system("clear")
-		print(logo)
-		print ("")
-		print(" \033[1;32m NADEEM Toll Free BUT You Need Get Approved First\033[1;37m\n")
-		print(" \033[1;32m Note : YE TOOL FREE OF COST HAI BHAI \033[1;37m")
-		print ("")
-		print(" Your Key is Not Approved ")
-		print("")
-		print(" Copy And Send Key To Admin")
-		print ("")
-		print (" Your Key : "+ak+ah+key1 )
-		print ("")
-		name = input(" Your Name : ")
-		print ("")
-		gf = input(" Your gf Name : ")
-		print ("")
-		lol = input(" Your Your Email : ")
-		print ("")
-		input(" Press Enter To Send Key")
-		time.sleep(3.5)
-		tks = 'Dear%20NADEEM,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Email%20:%20'+lol+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+ah+key1
-		os.system('am start https://wa.me/+919910632063?text=' + tks)
-		Subscraption()        
-Subscraption()
+
+#main()
 #----------------------------[CODE/END]-----------------------------------#
